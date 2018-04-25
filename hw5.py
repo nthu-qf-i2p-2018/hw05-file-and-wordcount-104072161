@@ -1,7 +1,7 @@
 
 # coding: utf-8
 
-# In[13]:
+# In[1]:
 
 
 import csv
@@ -9,7 +9,7 @@ import json
 import pickle
 import string
 
-def main(i_have_a_dream):
+def main(filename):
     lines =open('i_have_a_dream.txt').readlines()
     all_words = []
     for line in lines:
@@ -38,7 +38,7 @@ if __name__ == '__main_':
     main("i_have_a_dream.txt")
 
 
-# In[12]:
+# In[2]:
 
 
 main("i_have_a_dream.txt")
