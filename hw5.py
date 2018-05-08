@@ -1,7 +1,7 @@
 
 # coding: utf-8
 
-# In[2]:
+# In[4]:
 
 
 import csv
@@ -16,14 +16,14 @@ def main(filename):
         words=line.split() 
         for word in words:
             word=word.strip(string.punctuation)
-            if word!=(" "):
+            if word!=(""):
                 all_words.append(word) 
     
     from collections import Counter
     word_counter=Counter(all_words)
     
-    csv_file=open("word_count.csv","w")
-    with open("word_count.csv","w")as csv_file:
+    csv_file=open("wordcount.csv","w")
+    with open("wordcount.csv","w")as csv_file:
         writer=csv.writer(csv_file)
         writer.writerow(['word','count'])
         writer.writerows(word_counter.most_common())
@@ -38,7 +38,7 @@ if __name__ == '__main_':
     main("i_have_a_dream.txt")
 
 
-# In[3]:
+# In[5]:
 
 
 main("i_have_a_dream.txt")
