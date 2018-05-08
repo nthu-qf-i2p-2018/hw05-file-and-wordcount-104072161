@@ -1,7 +1,7 @@
 
 # coding: utf-8
 
-# In[3]:
+# In[2]:
 
 
 import csv
@@ -36,4 +36,10 @@ def main(filename):
         
 if __name__ == '__main_':
     main("i_have_a_dream.txt")
+
+
+# In[3]:
+
+
+main("i_have_a_dream.txt")
 
